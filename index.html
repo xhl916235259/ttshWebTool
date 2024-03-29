@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>信息查询</title>
+</head>
+
+<body>
+  <div>
+    <button id="aaa" onclick="aaa();">测试</button>
+    <button id="connect" onclick="connect();">connect server</button> &nbsp;&nbsp;
+    <button id="loginAccount" onclick="loginAccount();">loginAccount</button>&nbsp;&nbsp;
+    <button id="loginRole" onclick="loginRole();">loginRole</button>&nbsp;&nbsp;
+    <button id="getInfoDSX" onclick="getInfoDSX();">获取地煞坐标</button>&nbsp;&nbsp;
+    <button id="ff_xxcd" onclick="ff_xxcd();">新秀村东</button>&nbsp;&nbsp;
+    <button id="exitFight" onclick="exitFight();">退出战斗</button>&nbsp;&nbsp;
+    自动遇怪：<button id="ff_xxcd" onclick="autoMeetFotSet();">开始</button>&nbsp;&nbsp;
+    自动遇怪：<button id="ff_xxcd" onclick="clearAutoMeetFotSet();">暂停</button>&nbsp;&nbsp;
+    <button id="disconnect" onclick="quit();">disconnect</button>&nbsp;&nbsp;
+    <button id="clear" onclick="clearMsg();">clear</button>
+  </div>
+
+  <div> 
+    战斗胜利次数：<label id="fightCount">0</label>  战斗卡顿次数：<label id="fightPauseCount">0</label>
+  </div>
+
+  <div>
+    <p>账号列表</p>
+    <ul id="roleList"></ul>
+    <p>地煞列表</p>
+    <ul id="dsList"></ul>
+  </div>
+
+  <script src="./ws2s-js/ws2s-2.1.4.js"></script>
+  <script src="./index.js"></script>
+  
+</body>
+
+</html>
