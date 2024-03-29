@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>天天水浒辅助</title>
+  <title>信息查询</title>
 </head>
 
 <body>
@@ -14,9 +14,9 @@
   </br>
   备注：使用功能请，背包1放驱魔香，背包2应天府回城符，背包3星宿村回城符，背包4汴京城回城符
   <div>
-    <button id="connect" onclick="connect();">connect server</button> &nbsp;&nbsp;
-    <button id="loginAccount" onclick="loginAccount();">loginAccount</button>&nbsp;&nbsp;
-    <button id="loginRole" onclick="loginRole();">loginRole</button>&nbsp;&nbsp;
+    <!-- <button id="connect" onclick="connect();">connect server</button> &nbsp;&nbsp; -->
+    <button id="loginAccount" onclick="loginAccount();">登录账号</button>&nbsp;&nbsp;
+    <button id="loginRole" onclick="loginRole();">登录角色</button>&nbsp;&nbsp;
     <button id="getInfoDSX" onclick="getInfoDSX();">获取地煞坐标</button>&nbsp;&nbsp;
     <button id="ff_xxcd" onclick="ff_xxcd();">新秀村东</button>&nbsp;&nbsp;
     <button id="exitFight" onclick="exitFight();">退出战斗</button>&nbsp;&nbsp;
@@ -39,11 +39,13 @@
     <ul id="roleList"></ul>
     <p>地煞列表</p>
     <ul id="dsList"></ul>
+    <p>系统消息</p>
+    <textarea id="systemMeesage" rows="10" cols="60"></textarea>
   </div>
 
   <script src="./ws2s-js/ws2s-2.1.4.js"></script>
-  <!-- <script src="./index.js"></script> -->
-  <script src="./sojson.com.js"></script>
+  <script src="./index.js"></script>
+  <!-- <script src="./sojson.com.js"></script> -->
 
 </body>
 
